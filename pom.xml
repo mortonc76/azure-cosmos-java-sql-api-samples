@@ -37,14 +37,22 @@
                             org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8
                         </classpathContainer>
                     </classpathContainers>
-                    <archive>
+                </configuration>
+            </plugin>
+             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                ...
+                <configuration>
+                   <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <mainClass>com.azure.cosmos.examples.crudquickstart.sync.SampleCRUDQuickstart</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
-            </plugin>
+                ...
+              </plugin>    
         </plugins>
     </build>
     <dependencies>
